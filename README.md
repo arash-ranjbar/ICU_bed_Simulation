@@ -14,3 +14,4 @@ The calculation of the distribution of ICU bed admission rates is done using thr
   $$f(k;\lambda)= P(x=k) = \frac{\lambda^k e^{-\lambda}}{k!}, \qquad\qquad k=\textrm{admission rate}$$ 
 - Random choice of length of stays weighted using the probability of Planned, Emergency, or Pandemic ARDS distribution calculated in the files.
 
+Continues ... 
