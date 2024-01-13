@@ -10,7 +10,7 @@ The calculation of the distribution of ICU bed admission rates is done using thr
 
 - Using a Log-Normal Distribution with the mean ($\mu$) of the logarithm of the distribution obtained from the real data, $\mu=\log(\textrm{average admissions})$, and the standard deviation ($\sigma$) sets to fit the AmsterdamUMCdb profile for admitted patients
   $$P(x) = \frac{1}{\sigma x \sqrt{2\pi} } e^{-\frac{(\ln{x}-\mu)^2}{2\sigma^2}}$$ 
-- Using a Poisson Distribution with the expected value ($\lambda$) of distribution set to be the mean length of stay obtained from the real data, based on AmsterdamUMCdb mean=22 (See the description of data in the [real data simulation]((/arash_ranjbar/ICU_bed_Simulation/Simulation_ARDS_(Pandemic).ipynb)) or[pandemic simulation](/arash_ranjbar/ICU_bed_Simulation/Simulation_ARDS_(Pandemic).ipynb))
+- Using a Poisson Distribution with the expected value ($\lambda$) of distribution set to be the mean length of stay obtained from the real data, based on AmsterdamUMCdb mean=22 (See the description of data in the [real data simulation](/arash-ranjbar/ICU_bed_Simulation/blob/main/Simulation_1000times.ipynb) or [pandemic simulation](/arash-ranjbar/ICU_bed_Simulation/blob/main/Simulation_ARDS_(Pandemic).ipynb))
   $$f(k;\lambda)= P(x=k) = \frac{\lambda^k e^{-\lambda}}{k!}, \qquad\qquad k=\textrm{admission rate}$$ 
 - Random choice of length of stays weighted using the probability of Planned, Emergency, or Pandemic ARDS distribution calculated in the files.
 
